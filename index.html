@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfoliyo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="nav">
+            <nav>
+                <img src="img/Savan_Ughareja__1_-removebg-preview.png" class="logo">
+
+                <ul id="sidemanu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfoliyo">Portfolio</a></li>
+                    <li><a href="#contect">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onClick="closemanu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onClick="openmanu()"></i>
+            </nav>
+        </div>
+        <div class="containor">
+
+            <div class="name-img">
+                <div class="name">
+                    <h1>Hello! I,m <br><span>Savan Ughareja</span></h1>
+                    <h3>I,m Full Stack Web Developer</h3>
+                </div>
+                <div class="img">
+                    <img src="img/patel.png">
+                </div>
+                <!-- <div class="img img2">
+                    <img src="img/patel2.png">
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div id="About">
+        <div class="containor">
+            <div class="row">
+                <div class="first-row">
+                    <img src="img/bg-img.png">
+                </div>
+                <div class="second-row">
+                    <h1 class="title">About Me</h1>
+                    <p>Hi, I’m Savan Ughareja, a self-taught web developer with a strong passion for creating beautiful
+                        and functional websites. My journey into web development began out of a curiosity for how
+                        websites work and a desire to bring ideas to life through code.</p>
+                    <br>
+                    <div class="tab-title">
+                        <p class="skills active-link" onClick="opentab('skills')">Skills</p>
+                        <p class="skills" onClick="opentab('Experience')">Experience</p>
+                        <p class="skills" onClick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-skills active-tab" id="skills">
+                        <ul>
+                            <li><span> Web Developer</span><br>Web App Development</li>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-skills " id="Experience">
+                        <ul>
+                            <li><span>Experience</span><br>I’m studying Information Technology at A D Patel Institute of
+                                Technology - CVM Umiversity (Anand), where I’ve been exploring various aspects of web
+                                development, including front-end. My coursework and personal projects have allowed me to
+                                apply theoretical knowledge to real-world applications, deepening my understanding of
+                                web technologies.</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-skills" id="Education">
+                        <ul>
+                            <li><span>2020</span><br>10th Pass</li>
+                            <li><span>2022</span><br>12th Pass</li>
+                            <li><span>2024</span><br>B.Tech Continue</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="containor">
+            <h1 class="title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Desing</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis minima soluta officiis
+                        voluptatem blanditiis, veniam temporibus tenetur obcaecati porro assumenda vel totam corrupti
+                        quam laboriosam minus cupiditate possimus quaerat doloribus?</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Desing</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis minima soluta officiis
+                        voluptatem blanditiis, veniam temporibus tenetur obcaecati porro assumenda vel totam corrupti
+                        quam laboriosam minus cupiditate possimus quaerat doloribus?</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfoliyo">
+        <div class="containor">
+            <h1 class="title">My Work</h1>
+            <div class="work-list">
+                <div class="work a">
+                    <img src="img/gallery-removebg-preview.png">
+                    <div class="layer">
+                        <h3>Tic Tac Toe Game</h3>
+                        <p>This is a simple game. Play it from My Git-hub link.</p>
+                        <a href="https://github.com/Savan5033/tic-tac-toi.git"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work b">
+                    <img src="img/istockphoto-1056840214-612x612-removebg-preview.png">
+                    <div class="layer">
+                        <h3>Stone Paper Scissors Game</h3>
+                        <p>This is a simple game. Play it from My Git-hub link.</p>
+                        <a href="https://github.com/Savan5033/Stone--Paper---Scissors-Game.git"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work c">
+                    <img src="img/weather-removebg-preview.png">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>This is a simple game. Play it from My Git-hub link.</p>
+                        <a href="https://github.com/Savan5033/newrepo.git"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <div id="contect">
+        <div class="containor">
+            <div class="row">
+                <div class="left-contect">
+                    <h1 class="title">Contect Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i></i>savanpatel14478@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9313325733</p>
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/savan-ughareja-b607102b7/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/savu._.4809/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Savan5033"><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="right-contect">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="Email" placeholder="Enter Your Email Id">
+                        <input type="number" name="Number" placeholder="Enter Your Number">
+                        <textarea name="Message" rows="6" placeholder="Enter Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Savan Ughareja. All Rights reserved.</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
