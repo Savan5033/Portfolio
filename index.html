@@ -12,78 +12,173 @@
 </head>
 
 <body>
-    <div id="header">
-        <div class="nav">
-            <nav>
-                <img src="img/Savan_Ughareja__1_-removebg-preview.png" class="logo">
-
-                <ul id="sidemanu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfoliyo">Portfolio</a></li>
-                    <li><a href="#contect">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onClick="closemanu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onClick="openmanu()"></i>
+    <header id="header">
+        <div class="header-container">
+            <nav class="navbar">
+                <div class="logo-container">
+                    <img src="img/Savan_Ughareja__1_-removebg-preview.png" class="logo" alt="Savan Ughareja">
+                </div>
+                <div class="nav-menu">
+                    <ul id="sidemanu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#skills-section">Skills</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfoliyo">Projects</a></li>
+                        <li><a href="#contect">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onClick="closemanu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onClick="openmanu()"></i>
+                </div>
             </nav>
         </div>
+        
         <div class="containor">
-
-            <div class="name-img">
-                <div class="name">
-                    <h1>Hello! I,m <br><span>Savan Ughareja</span></h1>
-                    <h3>I,m Full Stack Web Developer</h3>
+            <div class="hero-section">
+                <div class="name-img">
+                    <div class="name">
+                        <h1>Hello! I'm <br><span>Savan Ughareja</span></h1>
+                        <h3>I'm Full Stack Web Developer</h3>
+                    </div>
+                    <div class="img">
+                        <img src="img/patel.png" alt="Savan Ughareja">
+                    </div>
                 </div>
-                <div class="img">
-                    <img src="img/patel.png">
+            </div>
+        </div>
+    </header>
+    
+    <div id="About">
+        <div class="containor">
+            <h1 class="title">About Me</h1>
+            <div class="subtitle">
+                <p>Get to know more about me and my background.</p>
+            </div>
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="img/bg-img.png" alt="Savan Ughareja">
                 </div>
-                <!-- <div class="img img2">
-                    <img src="img/patel2.png">
-                </div> -->
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Hi, I'm Savan Ughareja, a self-taught web developer with a strong passion for creating beautiful
+                            and functional websites. My journey into web development began out of a curiosity for how
+                            websites work and a desire to bring ideas to life through code.</p>
+                        <p>I'm currently studying Information Technology at A D Patel Institute of Technology - CVM University (Anand), 
+                            where I've been exploring various aspects of web development. My coursework and personal projects have allowed 
+                            me to apply theoretical knowledge to real-world applications, deepening my understanding of web technologies.</p>
+                    </div>
+                    <div class="about-tabs">
+                        <div class="tab-title">
+                            <p class="tab-link active-link" onClick="opentab('skills')">Skills</p>
+                            <p class="tab-link" onClick="opentab('Experience')">Experience</p>
+                            <p class="tab-link" onClick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-content active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>Building responsive and dynamic websites</li>
+                                <li><span>UI/UX Design</span><br>Creating intuitive and engaging user interfaces</li>
+                                <li><span>Full Stack Development</span><br>Working with both frontend and backend technologies</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="Experience">
+                            <ul>
+                                <li><span>2023 - Present</span><br>Web Development Intern</li>
+                                <li><span>2022 - 2023</span><br>Create Projects</li>
+                                <li><span>2021 - 2022</span><br>Learn Web Development</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="Education">
+                            <ul>
+                                <li><span>2022 - Present</span><br>B.Tech in Information Technology<br>A D Patel Institute of Technology</li>
+                                <li><span>2022</span><br>12th Pass</li>
+                                <li><span>2020</span><br>10th Pass</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div id="About">
-        <div class="containor">
-            <div class="row">
-                <div class="first-row">
-                    <img src="img/bg-img.png">
-                </div>
-                <div class="second-row">
-                    <h1 class="title">About Me</h1>
-                    <p>Hi, I’m Savan Ughareja, a self-taught web developer with a strong passion for creating beautiful
-                        and functional websites. My journey into web development began out of a curiosity for how
-                        websites work and a desire to bring ideas to life through code.</p>
-                    <br>
-                    <div class="tab-title">
-                        <p class="skills active-link" onClick="opentab('skills')">Skills</p>
-                        <p class="skills" onClick="opentab('Experience')">Experience</p>
-                        <p class="skills" onClick="opentab('Education')">Education</p>
-                    </div>
-                    <div class="tab-skills active-tab" id="skills">
-                        <ul>
-                            <li><span> Web Developer</span><br>Web App Development</li>
-                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                        </ul>
-                    </div>
-                    <div class="tab-skills " id="Experience">
-                        <ul>
-                            <li><span>Experience</span><br>I’m studying Information Technology at A D Patel Institute of
-                                Technology - CVM Umiversity (Anand), where I’ve been exploring various aspects of web
-                                development, including front-end. My coursework and personal projects have allowed me to
-                                apply theoretical knowledge to real-world applications, deepening my understanding of
-                                web technologies.</li>
 
-                        </ul>
+    <!-- My Skills Section -->
+    <div id="skills-section">
+        <div class="containor">
+            <h1 class="title">My Skills</h1>
+            <div class="subtitle">
+                <p>Here are the technologies and tools I work with on a daily basis.</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-icon html">
+                        <img src="img/images (1).png" alt="HTML">
                     </div>
-                    <div class="tab-skills" id="Education">
-                        <ul>
-                            <li><span>2020</span><br>10th Pass</li>
-                            <li><span>2022</span><br>12th Pass</li>
-                            <li><span>2024</span><br>B.Tech Continue</li>
-                        </ul>
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon css">
+                        <img src="img/images.png" alt="CSS">
                     </div>
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon js">
+                        <img src="img/a69e3ba2441d35dd1a7945e826064708f30c10a9-1000x667.jpg" alt="JavaScript">
+                    </div>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon react">
+                        <img src="img/images (2).png" alt="React">
+                    </div>
+                    <h3>React</h3>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon node">
+                        <img src="img/1_TY9uBBO9leUbRtlXmQBiug.png" alt="Node.js">
+                    </div>
+                    <h3>Node.js</h3>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon express">
+                        <img src="img/express-js.png" alt="Express">
+                    </div>
+                    <h3>Express</h3>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon mongodb">
+                        <img src="img/images (3).png" alt="MongoDB">
+                    </div>
+                    <h3>MongoDB</h3>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon sql">
+                        <img src="img/images (4).png" alt="SQL">
+                    </div>
+                    <h3>SQL</h3>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon python">
+                        <img src="img/python.png" alt="Python">
+                    </div>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon cpp">
+                        <img src="img/C.png" alt="C/C++">
+                    </div>
+                    <h3>C/C++</h3>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon github">
+                        <img src="img/images (5).png" alt="GitHub">
+                    </div>
+                    <h3>GitHub</h3>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon bootstrap">
+                        <img src="img/images.jpeg" alt="Bootstrap">
+                    </div>
+                    <h3>Bootstrap</h3>
                 </div>
             </div>
         </div>
@@ -92,22 +187,37 @@
     <div id="services">
         <div class="containor">
             <h1 class="title">My Services</h1>
+            <div class="subtitle">
+                <p>Here are the services I offer to my clients.</p>
+            </div>
             <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Desing</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis minima soluta officiis
-                        voluptatem blanditiis, veniam temporibus tenetur obcaecati porro assumenda vel totam corrupti
-                        quam laboriosam minus cupiditate possimus quaerat doloribus?</p>
-                    <a href="#">learn more</a>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h2>Web Development</h2>
+                    <p>I specialize in crafting visually stunning, responsive, and user-friendly websites that leave a lasting impression. Whether it's a personal project or a client website, I ensure high performance, clean code, and a mobile-first approach to deliver a seamless experience across all devices.</p>
                 </div>
-                <div>
-                    <i class="fa-solid fa-crop-simple"></i>
-                    <h2>UI/UX Desing</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis minima soluta officiis
-                        voluptatem blanditiis, veniam temporibus tenetur obcaecati porro assumenda vel totam corrupti
-                        quam laboriosam minus cupiditate possimus quaerat doloribus?</p>
-                    <a href="#">learn more</a>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-crop-simple"></i>
+                    </div>
+                    <h2>UI/UX Design</h2>
+                    <p>I create intuitive and user-centric interfaces that enhance the overall user journey. By combining research, wireframing, and aesthetic principles, I ensure that every design decision aligns with user needs and business goals for optimal engagement and satisfaction.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                    <h2>Responsive Design</h2>
+                    <p>I build websites that look and function perfectly on all devices, from desktops to smartphones. Using modern CSS frameworks and best practices, I ensure your site adapts seamlessly to any screen size, providing an optimal viewing experience for all users.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h2>Database Design</h2>
+                    <p>I design efficient and scalable database structures that form the backbone of your web applications. From relational databases like MySQL to NoSQL solutions like MongoDB, I implement the right database solution tailored to your project's specific needs.</p>
                 </div>
             </div>
         </div>
@@ -115,66 +225,138 @@
 
     <div id="portfoliyo">
         <div class="containor">
-            <h1 class="title">My Work</h1>
-            <div class="work-list">
-                <div class="work a">
-                    <img src="img/gallery-removebg-preview.png">
-                    <div class="layer">
-                        <h3>Tic Tac Toe Game</h3>
-                        <p>This is a simple game. Play it from My Git-hub link.</p>
-                        <a href="https://github.com/Savan5033/tic-tac-toi.git"><i class="fa-solid fa-link"></i></a>
+            <h1 class="title">My Projects</h1>
+            <div class="subtitle">
+                <p>Check out some of my recent work and personal projects.</p>
+            </div>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="img/imagify.png" alt="Imagify">
+                    </div>
+                    <div class="project-info">
+                        <h3>Imagify</h3>
+                        <p>An AI-powered image generation tool that creates unique images based on text descriptions. Built with React, Node.js, and OpenAI's API.</p>
+                        <div class="project-tech">
+                            <span>MERN Stack</span>
+                            <!-- <span>Node.js</span> -->
+                            <span>OpenAI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Savan5033/imagify" target="_blank" title="View Code"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://imagify-1ia8.vercel.app/" target="_blank" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="work b">
-                    <img src="img/istockphoto-1056840214-612x612-removebg-preview.png">
-                    <div class="layer">
-                        <h3>Stone Paper Scissors Game</h3>
-                        <p>This is a simple game. Play it from My Git-hub link.</p>
-                        <a href="https://github.com/Savan5033/Stone--Paper---Scissors-Game.git"><i
-                                class="fa-solid fa-link"></i></a>
+                
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="img/expense tracker.png" alt="Expense Tracker">
+                    </div>
+                    <div class="project-info">
+                        <h3>Expense Tracker</h3>
+                        <p>A comprehensive expense tracking application that helps users manage their finances, create budgets, and visualize spending patterns.</p>
+                        <div class="project-tech">
+                            <span>React js</span>
+                            <span>Node js</span>
+                            <span>Express js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Savan5033/Expense-tracker" target="_blank" title="View Code"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" target="_blank" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="work c">
-                    <img src="img/weather-removebg-preview.png">
-                    <div class="layer">
-                        <h3>Weather App</h3>
-                        <p>This is a simple game. Play it from My Git-hub link.</p>
-                        <a href="https://github.com/Savan5033/newrepo.git"><i class="fa-solid fa-link"></i></a>
+                
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="img/blog img.png" alt="Blogging Website">
+                    </div>
+                    <div class="project-info">
+                        <h3>Blogging Website</h3>
+                        <p>A feature-rich blogging platform that allows users to create, edit, and share content with a modern interface and responsive design.</p>
+                        <div class="project-tech">
+                            <span>React js</span>
+                            <span>Node js</span>
+                            <span>Express js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Savan5033/Blogging-Website" target="_blank" title="View Code"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" target="_blank" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See More</a>
         </div>
     </div>
 
     <div id="contect">
         <div class="containor">
-            <div class="row">
-                <div class="left-contect">
-                    <h1 class="title">Contect Me</h1>
-                    <p><i class="fa-solid fa-envelope"></i></i>savanpatel14478@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>9313325733</p>
-                    <div class="social-icon">
-                        <a href="https://www.linkedin.com/in/savan-ughareja-b607102b7/"><i
-                                class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/savu._.4809/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://github.com/Savan5033"><i class="fa-brands fa-github"></i></a>
-                        <a href=""><i class="fa-brands fa-telegram"></i></a>
+            <h1 class="title">Contact Me</h1>
+            <div class="subtitle">
+                <p>Get in touch with me for collaborations and opportunities.</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>savanpatel14478@gmail.com</p>
+                        </div>
                     </div>
-                    <a href="" download class="btn btn2">Download CV</a>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>9313325733</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Morbi, Gujarat, India</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h3>Connect With Me</h3>
+                        <div class="social-icon">
+                            <a href="https://www.linkedin.com/in/savan-ughareja-b607102b7/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/savu._.4809/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/Savan5033" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                        </div>
+                    </div>
+                    <a href="img/ADIT_IT_UgharejaSavanShantilal (1).pdf" download class="btn btn2">Download CV</a>
                 </div>
-                <div class="right-contect">
+                <div class="contact-form">
+                    <h3>Send Me a Message</h3>
                     <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Enter Your Name" required>
-                        <input type="email" name="Email" placeholder="Enter Your Email Id">
-                        <input type="number" name="Number" placeholder="Enter Your Number">
-                        <textarea name="Message" rows="6" placeholder="Enter Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
+                        <div class="form-group">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" name="Number" placeholder="Your Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn2">Send Message</button>
                     </form>
                     <span id="msg"></span>
                 </div>
-
-
             </div>
         </div>
     </div>

@@ -1,17 +1,16 @@
-let skills = document.getElementsByClassName("skills");
-let content = document.getElementsByClassName("tab-skills");
+let tabLinks = document.getElementsByClassName("tab-link");
+let tabContents = document.getElementsByClassName("tab-content");
 let sidemanu = document.getElementById("sidemanu");
 
 function opentab(tabname){
-    for(let skill of skills){
-        skill.classList.remove("active-link");
+    for(let tabLink of tabLinks){
+        tabLink.classList.remove("active-link");
     }
-    for(let tabskill of content){
-        tabskill.classList.remove("active-tab");
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
+    for(let tabContent of tabContents){
+        tabContent.classList.remove("active-tab");
     }
-
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
 }
 
 function openmanu(){
@@ -22,7 +21,7 @@ function closemanu(){
     sidemanu.style.right = '-200px';
 }
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycby9CWj-F4AeDEXvPdLgIa0lkZ-i21x9zi1K1Quo5_hDhMTe0Bao4rk74FkZ75lrveUhPw/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxQgvACp_HKdlvb9TrL8GMJLkqpJ2p88pARuq5AQmIVNBzFI-uPUaT8ttY5n_uz2DFowQ/exec'
   const form = document.forms['submit-to-google-sheet']
   const msg = document.getElementById("msg")
 
